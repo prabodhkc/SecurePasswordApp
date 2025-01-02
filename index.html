@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="image/Password_protector.png" alt="App Logo" class="logo">
+        <h1>Secure Password Generator</h1>
+        <input id="password" type="text" readonly placeholder="Your secure password">
+        <div class="options">
+            <label>
+                <input type="checkbox" id="include-uppercase" checked>
+                Include Uppercase
+            </label>
+            <label>
+                <input type="checkbox" id="include-symbols">
+                Include Symbols
+            </label>
+            <label>
+                Password Length:
+                <input type="number" id="password-length" value="12" min="6" max="64">
+            </label>
+        </div>
+        <button id="generate-password">Generate Password</button>
+        <button id="copy-password">Copy to Clipboard</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
